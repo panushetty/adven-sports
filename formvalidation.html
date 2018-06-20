@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Form</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript"></script>
+<script type="text/javascript" src="main.js">
+
+</script>
+</head>
+<body>
+<div class=menu id=scroll>
+      
+       <a href="index.html">Home</a>
+       <a href="adven.html">Adventures</a>
+       <a href="about.html">About us</a>
+       <a href="formvalidation.html">Sign up</a>
+       <a href="login.html">Login</a>
+      
+</div>
+<div class="header">
+<div class=headermenu >
+      
+       <a href="index.html">Home</a>
+       <a href="adven.html">Adventures</a>
+       <a href="about.html">About us</a>
+       <a  href="formvalidation.html">Sign up</a>
+       <a  href="login.html">Login</a>
+</div>
+     <img src="newlogo.png">
+</div>
+<div class=high>
+<b>New to AdventureSports ?</b><br>
+<p>An AdventureSports account is needed to continue.</p>
+</div>
+<div class=form >
+<form  action="form.php" method="post" name="f1" onsubmit="validField()" >
+<input type="hidden" name="submitted" value="true">
+<div class="container">
+  <div class="yo activeg" id=active1>Basic Info</div>
+  <div class="yo" id=active2>Contact</div>  
+  <div class="yo" id=active3>Account Info</div>
+</div>
+
+<!--Fieldsets -->
+<fieldset class="forma" id="first1">
+<div class="input">
+<label for="fname" id="first">First Name</label><br>
+<input type="text" id="fname" name=f oninput="validFname()">
+<p id="fname1" class=mess required></p>
+<br>
+<label for="lname">Last Name</label><br><input type="text" id="lname" name=l oninput="validLname()">
+<p id="lname1" class=mess required ></p>
+<br>
+<label for="age">Age</label><br>
+<input type="text" id="age" name="a" oninput="validAge1()"><p id="age1" class=mess name=a required></p>
+<br>
+</div>
+<button id="next_btn1" onclick="next_step1()" type="button">Next</button>
+
+</fieldset>
+
+<fieldset class="forma" id=second1>
+<div class=input>
+<label for="email">EmailID</label>
+<br><input type="text" id="email" name=e oninput="validEmail()"><p id="email1" class=mess required></p>
+<br>
+<label for="pno">Phone No</label>
+<br><input type="text" id="pno" name=p oninput="validPhone()"><p id="pno1" class=mess  required></p>
+<br>
+</div>
+Gender<br>
+<input type="radio" name="g" value="Male">Male
+<input type="radio" name="g" value="Female">Female<p id="gen1" class=mess></p>
+<br>
+
+    
+<button id="pre_btn1" onclick="prev_step1()" type="button" >Previous</button>
+<button id="next_btn2" name="next" onclick="next_step2()" type="button">Next</button>       
+
+</fieldset>
+<fieldset class="forma" id=third1>
+
+
+<div class="input">
+<label for="pwd">Password:</label>
+<br><input type="password" name=pw id="pwd" oninput="validPass()"><p id="pwd1" class=mess  required></p>
+<br>
+<label for="rpwd">Confirm Password:</label><br><input type="password" id="rpwd" name=rpw oninput="validRpass()"><p id="rpwd1" class=mess required></p>
+<br>
+</div>
+Country<br>
+    <select id="ddbl" name="c">
+      <option>Select Your Country</option>
+      <option>India</option>
+      <option>China</option>
+      <option>Africa</option>
+      <option>America</option>  
+    </select><p id="count1" class=mess></p><br>
+Do you agree to the terms and conditions:<input type="checkbox" id="terms" name=t value="Yes"><br>
+<p id="Term1" class=mess></p><br>
+<button id="pre_btn2" onclick="prev_step2()" type="button" >Previous</button>
+<button type="submit" name="Submit">Submit</button> 
+<button type="reset" name="text" >Reset</button>
+</fieldset>
+</form>
+</div>
+
+<div>
+  <h3></h3>
+</div>
+
+
+<footer class="contain center opacity ">
+  <h3>Find Us On</h3>
+  <h4 >&copy;AdventureSports.com</h4>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("scroll").style.top = "0";
+    } else {
+        document.getElementById("scroll").style.top = "-50px";
+    }
+}
+</script>
+</body>
+</html>

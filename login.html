@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="peachpuff">
+<div class=menu id="scroll">
+      
+       <a href="index.html">Home</a>
+       <a href="adven.html">Adventures</a>
+       <a href="about.html">About us</a>
+       <a href="formvalidation.html">Sign up</a>
+       <a href="login.html">Login</a>
+      
+</div>
+<div class="header">
+<div class=headermenu >
+      
+       <a href="index.html">Home</a>
+       <a href="adven.html">Adventures</a>
+       <a href="about.html">About us</a>
+       <a  href="formvalidation.html">Sign up</a>
+       <a  href="login.html">Login</a>
+</div>
+     <img src="newlogo.png">
+</div>
+    <div class=high>
+    <b >Login using Email.</b><br>
+    <p >To have a more user-friendly experience.</p>
+    </div>
+    <div class="form">
+    <form class=forma action="form1.php" method="post">
+    <input type="hidden" name="submitted" value="true">
+    <div class="input">
+    Email<br><input type="text" name="un" placeholder="username@domain.com" required ><br>
+    Password<br><input type="password" name="Pass" placeholder="password" required ><br><br>
+    </div>
+    <button type="submit" >Login</button><br>
+    Not a member yet?? <br><br>
+    <a href="formvalidation.html"><button>Sign up</button><a>
+    </form>
+    </div>
+
+  <footer class="contain center opacity  ">
+  <h3>Find Us On</h3>
+  <h4 >&copy;AdventureSports.com</h4>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("scroll").style.top = "0";
+    } else {
+        document.getElementById("scroll").style.top = "-50px";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adventure sports</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animation.css">
+<link rel="stylesheet" type="text/css" href="w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<?php session_start();?>
+<?php $name=$_SESSION["first_name"].$_SESSION["last_name"];?>
+
+<div class=menu id="scroll">
+      
+       <a href="index.php" >Home</a>
+       <a href="#">Adventures</a>
+       <a href="about.php">About us</a>
+       <a  class=far id=login_page href="user.html"><?php echo $name;?></a>
+       <a  id=login_page href="logout.php">Logout</a>
+</div>
+
+<div class="header">
+<div class=headermenu >
+      
+       <a href="index.php">Home</a>
+       <a href="#">Adventures</a>
+       <a href="about.php">About us</a>
+       <a  class=far id=login_page href="user.html"><?php echo $name;?></a>
+       <a  id=login_page href="logout.php">Logout</a>
+</div>
+     <img src="newlogo.png">
+</div>
+
+<div class="contact-j">
+  <div class="relative"><img src="contact2.png" style="width:100%;height: 375px;opacity: 0.80;">
+  
+ </div>
+</div> 
+
+<h3></h3>
+ <div class="w3-content" style="max-width:1100px;">
+	<div class="w3-container message">
+    <h3 align="center">Wide range of Adventures to chose from</h3>
+    <p align="center">Don't miss out on them</p>
+    </div>	
+  <div class="w3-row-padding">
+  
+      <a href="trekking.php">
+      <div class="w3-container sell " id="left">
+      	<img src="Trekking.jpg">
+        <h3>Trekking Camp,Himachal</h3>
+        <p class="w3-opacity">Starting from &#x20b9;10,000</p>
+        <p>Trekking meetup at Delhi</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+  
+      <a href="bikers.php">
+      <div class="w3-container sell " id="right">
+      	<img src="Bikersclub.jpg">
+        <h3>Bikers Club</h3>
+        <p class="w3-opacity">Cost subject to consideration with Bikers Club</p>
+        <p>Jaipur to Ladakh</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+
+      <a href="rafting.php">
+      <div class="w3-container sell " id="left">
+      	<img src="rafting1.jpg">
+        <h3>River Rafting</h3>
+        <p class="w3-opacity">Starting from &#x20b9;1,000</p>
+        <p>Rishikesh,Uttarkkhand</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+
+      <a href="scuba.php">
+      <div class="w3-container sell " id="right">
+      	<img src="scubadiving.jpg">
+        <h3>Scuba Diving</h3>
+        <p class="w3-opsacity">Starting from &#x20b9;3500 per person</p>
+        <p>Go Goa</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+      <!--Strat-->
+      <a href="skiing.php">
+      <div class="w3-container sell " id="left">
+        <img src="skiing.jpg">
+        <h3>Skiing</h3>
+        <p class="w3-opacity">For &#x20b9;<strike>1,000</strike> 800 only*</p>
+        <p>Gulmarg,Jammu and Kashmir Tourism</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+
+      <a href="trekking1.php">
+      <div class="w3-container sell " id="right">
+        <img src="trekking1.jpg">
+        <h3>Trekking</h3>
+        <p class="w3-opsacity">Starting from &#x20b9;1100 per person (Guide provided)</p>
+        <p>Enjoy stay at monastery in Dharamshala</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+
+      <a href="paragliding.php">
+      <div class="w3-container sell " id="left">
+        <img src="paragliding.jpg">
+        <h3>Paragliding</h3>
+        <p class="w3-opacity">Starting from &#x20b9;2500</p>
+        <p>Kangra and Kullu,Uttarkkhand</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+
+      <a href="ballooning.php">
+      <div class="w3-container sell " id="right">
+        <img src="hot air ballooning.jpg">
+        <h3>Hot Air Ballooning</h3>
+        <p class="w3-opsacity">Starting from &#x20b9;<strike>2500</strike> 2000 per person (Group of five)</p>
+        <p>Pushkar,Rajasthan</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div></a>
+
+      <a href="surfing.php">
+      <div class="w3-container sell " id="left">
+        <img src="surfing1.jpg">
+        <h3>Surfing</h3>
+        <p class="w3-opacity">Starting from &#x20b9;2,500 (Gear Provided)</p>
+        <p>Manpad point, Tamilnadu</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div></a>
+
+      <a href="wakeboarding.php">
+      <div class="w3-container sell " id="right">
+        <img src="wakeboarding.jpg">
+        <h3>WakeBoarding</h3>
+        <p class="w3-opsacity">Starting from &#x20b9;4000 per person</p>
+        <p>Goa</p>
+        <button class="w3-button w3-margin-bottom">More Details</button>
+      </div>
+      </a>
+
+  </div>
+
+  
+  
+  
+</div>
+
+
+  <div class="relative"><img src="contact1.jpg" style="width:100%;height: 375px;opacity: 0.80;">
+  <div class="absolute"><a href="about.html"><button>About us</button></a></div>
+  </div>
+  
+
+
+
+
+
+<footer class="w3-container w3-center w3-opacity  ">
+  <h3>Find Us On</h3>
+  <h4 >&copy;AdventureSports.com</h4>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+ </footer>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.getElementById("scroll").style.top = "0";
+    } else {
+        document.getElementById("scroll").style.top = "-50px";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
